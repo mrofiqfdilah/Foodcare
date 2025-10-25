@@ -21,23 +21,18 @@
             <div class="flex items-center gap-2">
                 <img src="./assets/image/Website-Logo.svg" alt="Foodcare Logo">
             </div>
-
-            <!-- Menu desktop -->
             <ul class="hidden md:flex items-center gap-8">
                 <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
                 <li><a href="#" class="text-white text-[16px] font-medium">Tentang</a></li>
                 <li><a href="#" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
             </ul>
-
-            <!-- Tombol menu -->
             <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
                 <i class="ri-menu-line"></i>
             </button>
-
-            <!-- Menu mobile fullscreen -->
             <div id="mobile-menu"
-                class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[101]">
-                <button id="close-btn" class="absolute top-5 right-6 text-white text-3xl focus:outline-none">
+                class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                <button id="close-btn"
+                    class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
                     <i class="ri-close-line"></i>
                 </button>
                 <a href="#" class="hover:underline">Program Donasi</a>
@@ -46,7 +41,6 @@
             </div>
         </div>
     </nav>
-
 
     <section class="home flex bg-[#2C6752] mt-[-8px] justify-center py-4 relative z-0">
         <div class="container w-full max-w-[1100px] h-[227px] overflow-hidden relative z-0">
@@ -79,12 +73,67 @@
                 </div>
                 <div class="swiper-pagination !bottom-2"></div>
             </div>
+        </div>
+    </section>
 
-            <div class="box-saldo bg-[#fff]">
-                <div class="left">
-                    <button></button>
+    <section class="saldo relative z-[60] px-4 sm:px-6">
+        <div
+            class="box-saldo -mt-8 border border-[#dedede] bg-white max-w-[1100px] mx-auto flex items-center justify-between px-6 py-4 rounded-lg shadow-sm relative z-[60]">
+            <div class="left flex items-center gap-3">
+                <button class="bg-[#EAF0EE] w-[44px] h-[44px] rounded-full flex items-center justify-center">
+                    <i class="ri-wallet-line text-[#E3712D] text-[24px]"></i>
+                </button>
+                <div class="block md:flex">
+                    <p class="text-[#949494] font-medium text-[16px] md:text-[18px]">
+                        Total Saldo
+                    </p>
+                    <p class="text-[#000] ml-0 md:ml-2 font-semibold text-[18px]">
+                        Rp 50.0000
+                    </p>
                 </div>
             </div>
+
+            <div class="right">
+                <button style="border:1.5px solid #E3712D"
+                    class="rounded-md px-4 py-2 text-[#E3712D] font-semibold text-[17px] hover:bg-[#E3712D] hover:text-white transition">
+                    Isi Saldo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pilihan-donasi mx-auto max-w-[1100px] mt-10 px-4 sm:px-0">
+        <h2 class="text-xl md:text-2xl font-extrabold text-[#000] mb-6">Ayo Bersedekah</h2>
+        <div class="flex justify-center gap-2 md:gap-6 flex-wrap">
+            <div style="border:1.4px solid #DEDEDE"
+                class="w-[110px] md:w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center">
+                <img src="./assets/image/Icon-Sedekah-Makanan.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
+                <p class="text-[#000] font-semibold text-sm md:text-[20px]">Makanan</p>
+            </div>
+
+            <div style="border:1.4px solid #DEDEDE"
+                class="w-[110px] md:w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center">
+                <img src="./assets/image/Icon-Sedekah-Uang.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
+                <p class="text-[#000] font-semibold text-sm md:text-[20px]">Uang Perporsi</p>
+            </div>
+
+            <div style="border:1.4px solid #DEDEDE"
+                class="w-[110px] md:w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center">
+                <img src="./assets/image/Icon-Buat-Donasi.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
+                <p class="text-[#000] font-semibold text-sm md:text-[20px]">Buat Donasi</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="left">
+            <h2 class="text-xl md:text-2xl font-extrabold text-[#000] mb-6">Laporan Donasi Terbaru!</h2>
+        </div>
+        <div class="right">
+            <h2 class="text-xl font-medium text-[#E3712D] mb-6">Lihat Semua</h2>
+        </div>
+        <div class="box">
+
         </div>
     </section>
 
