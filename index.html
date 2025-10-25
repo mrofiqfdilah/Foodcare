@@ -5,12 +5,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodcare Official Platform</title>
+    <link rel="icon" href="./assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <p class="text-5xl font-extrabold text-orange-600 text-center ">Hello from Foodcare!</p>
+    <nav class="bg-[#2C6752]" style="border-bottom: 0.1px solid #3d4b45;">
+        <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+            <div class="flex items-center gap-2">
+                <img src="./assets/image/Website-Logo.svg" alt="Foodcare Logo">
+            </div>
+            <ul class="hidden md:flex items-center gap-8">
+                <li><a href="#" class="text-white text-[16px] font-medium ">Program Donasi</a></li>
+                <li><a href="#" class="text-white text-[16px] font-medium ">Tentang</a></li>
+                <li><a href="#" class="text-white text-[16px] font-medium ">Hubungi Kami</a></li>
+            </ul>
+            <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                <i class="ri-menu-line"></i>
+            </button>
+            <div id="mobile-menu"
+                class="absolute top-full left-0 w-full bg-[#2C6752] flex flex-col items-center gap-6 py-6 text-center text-white text-[16px] font-medium opacity-0 scale-y-0 origin-top menu-transition md:hidden">
+                <a href="#" class="hover:underline">Program Donasi</a>
+                <a href="#" class="hover:underline">Tentang</a>
+                <a href="#" class="hover:underline">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home flex bg-[#2C6752] justify-center py-4">
+        <div class="container w-full max-w-[1100px] h-[227px] overflow-hidden relative">
+            <div class="swiper mySwiper h-full">
+                <div class="swiper-wrapper  ml-4 mt-2 md:ml-0">
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-1.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-2.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-3.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-1.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-2.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                    <div class="swiper-slide flex justify-center">
+                        <img src="./assets/image/Home-Banner-3.svg"
+                            class="w-[358px] h-[130px] object-cover rounded-lg" />
+                    </div>
+
+                </div>
+
+                <!-- Dots -->
+                <div class="swiper-pagination !bottom-2 "></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/slider-swiper.js"></script>
 </body>
 
 </html>

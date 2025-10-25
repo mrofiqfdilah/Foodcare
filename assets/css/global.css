@@ -1,0 +1,8 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: white;
+}
+
+.menu-transition {
+    transition: all 0.3s ease-in-out;
+}

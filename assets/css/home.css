@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    .slider img {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .slider img {
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+.swiper-pagination {
+    position: relative !important;
+    top: -80px !important;
+}
+
+/* Ubah warna dot swiper */
+.swiper-pagination-bullet {
+    background-color: #568575 !important;
+    /* abu-abu (Tailwind: gray-300) */
+    opacity: 1 !important;
+}
+
+/* Dot aktif (yang sedang tampil) */
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+    /* putih */
+}
+
+/* Opsional: biar dot sedikit lebih besar */
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+}
