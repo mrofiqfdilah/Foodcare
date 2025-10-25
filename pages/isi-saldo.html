@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcare Official Platform</title>
+    <link rel="icon" href="../assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative pt-[72px]">
+
+
+    <div class="hidden md:block">
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                </div>
+                <ul class="hidden md:flex items-center gap-8">
+                    <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Tentang</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                </ul>
+                <button id="menu-btn"
+                    class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                    <i class="ri-menu-line"></i>
+                </button>
+                <div id="mobile-menu"
+                    class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                    <button id="close-btn"
+                        class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <a href="#" class="hover:underline">Program Donasi</a>
+                    <a href="#" class="hover:underline">Tentang</a>
+                    <a href="#" class="hover:underline">Hubungi Kami</a>
+                </div>
+            </div>
+        </nav>
+        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center ">
+            <div class="p-5 w-full max-w-[1060px] ">
+                <h2 class="text-[#2C6752] font-semibold text-[24px]">Top Up Saldo</h2>
+                <p class="text-[#2C6752] font-normal text-[16px] mb-3">
+                    Saat ini isi saldo belum terintegrasi dengan apapun, saldo
+                    hanya temporary dari program yang dibuat untuk
+                    mempresentasikan donasi uang.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block md:hidden">
+
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <a href="../index.html">
+                        <i class="ri-arrow-left-line text-2xl text-[#fff]"></i>
+                    </a>
+                </div>
+                <h2
+                    class="absolute text-xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-semibold">
+                    Topup Saldo
+                </h2>
+            </div>
+
+        </nav>
+    </div>
+
+    <section class=" top-up">
+        <div class="w-full max-w-[650px] mx-auto p-5">
+            <div class="mb-2">
+                <label for="nominal" class="block text-[18px] mb-1 font-bold">Masukan Nominal</label>
+                <div class="relative">
+                    <span class="absolute left-2 top-1/2 text-[19px] -translate-y-1/2 text-[#000]">Rp</span>
+                    <input type="text" id="nominal" placeholder="0"
+                        class="w-full text-[19px] border outline-none border-gray-300 rounded pl-10 py-3">
+                </div>
+            </div>
+            <p class="mb-6 text-sm text-[#737373]">Minimal isi saldo Rp 20.000</p>
+
+            <h2 class="text-lg font-bold mb-4">Atau Pilih Nominal</h2>
+            <div class=" hidden md:flex gap-4 mb-4">
+                <div data-value="20000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    20.000</div>
+                <div data-value="50000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    50.000</div>
+                <div data-value="75000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    75.000</div>
+            </div>
+            <div class="hidden md:flex gap-4 mb-6 ">
+                <div data-value="100000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    100.000</div>
+                <div data-value="150000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    150.000</div>
+                <div data-value="200000"
+                    class="box flex-1 cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded">
+                    Rp
+                    200.000</div>
+            </div>
+
+            <div>
+                <div class="flex md:hidden flex-wrap justify-center gap-4 mb-4">
+                    <div data-value="20000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 20.000
+                    </div>
+                    <div data-value="50000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 50.000
+                    </div>
+                </div>
+
+                <div class="flex md:hidden flex-wrap justify-center gap-4 mb-6">
+                    <div data-value="75000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 75.000
+                    </div>
+                    <div data-value="100000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 100.000
+                    </div>
+                    <div data-value="150000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 150.000
+                    </div>
+                    <div data-value="200000"
+                        class="box cursor-pointer text-center py-2 border border-[#DEDEDE] font-semibold shadow-xs rounded w-[45%]">
+                        Rp 200.000
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="text-lg font-bold mb-4">Pilih Metode Pembayaran</h2>
+            <div class="mb-7">
+                <button class="payment-btn flex mb-3 items-center gap-2 border rounded px-3 py-2 w-full"
+                    data-value="bca">
+                    <img src="../assets/image/Topup-Saldo-Bank-1.svg" alt="">
+                    <p>BCA Virtual Account</p>
+                </button>
+                <button class="payment-btn flex items-center gap-2 border rounded px-3 py-2 w-full" data-value="gopay">
+                    <img src="../assets/image/Topup-Saldo-Bank-2.png" class="w-8" alt="">
+                    <p class="ml-1">Gopay</p>
+                </button>
+            </div>
+            <button class="w-full bg-[#E3712D] text-white font-bold py-2 rounded">Isi Saldo
+                Sekarang</button>
+        </div>
+    </section>
+
+    <script src="../assets/js/topup-saldo.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>
