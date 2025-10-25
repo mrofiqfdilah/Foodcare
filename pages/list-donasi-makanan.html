@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcare Official Platform | List Donasi Makanan</title>
+    <link rel="icon" href="../assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative pt-[72px]">
+
+
+    <div class="hidden md:block">
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                </div>
+                <ul class="hidden md:flex items-center gap-8">
+                    <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Tentang</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                </ul>
+                <button id="menu-btn"
+                    class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                    <i class="ri-menu-line"></i>
+                </button>
+                <div id="mobile-menu"
+                    class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                    <button id="close-btn"
+                        class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <a href="#" class="hover:underline">Program Donasi</a>
+                    <a href="#" class="hover:underline">Tentang</a>
+                    <a href="#" class="hover:underline">Hubungi Kami</a>
+                </div>
+            </div>
+        </nav>
+        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center">
+            <div class="p-5 w-full max-w-[1060px]">
+                <h2 class="text-[#2C6752] font-semibold text-[24px]">Apa itu sedekah makanan?</h2>
+                <p class="text-[#2C6752] font-normal text-[16px] mb-3">
+                    Kamu dapat ikut berpartisipasi dalam kegiatan yang sudah dibuat sebelumnya dengan berdonasi dalam
+                    bentuk makanan.
+                </p>
+                <div class="relative mt-4">
+                    <input type="search" placeholder="Cari Donasi..."
+                        class="w-full border border-[#DEDEDE] rounded-lg px-3 pr-10 py-2 outline-none ">
+                    <i class="ri-search-line absolute right-3 top-1/2 -translate-y-1/2 text-orange-500 text-lg"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="block md:hidden">
+
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <a href="../index.html">
+                        <i class="ri-arrow-left-line text-2xl text-[#fff]"></i>
+                    </a>
+                </div>
+                <h2
+                    class="absolute text-xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-semibold">
+                    Sedekah Makanan
+                </h2>
+            </div>
+
+        </nav>
+        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center ">
+            <div class="p-5 w-full max-w-[1060px] ">
+                <h2 class="text-[#2C6752] font-semibold text-[24px]">Apa itu sedekah makanan?</h2>
+                <p class="text-[#2C6752] font-normal text-[16px] mb-3">
+                    Kamu dapat ikut berpartisipasi dalam kegiatan yang sudah dibuat sebelumnya dengan berdonasi dalam
+                    bentuk makanan.
+                </p>
+                <div class="relative mt-4">
+                    <input type="search" placeholder="Cari Donasi..."
+                        class="w-full border border-[#DEDEDE] rounded-lg px-3 pr-10 py-2 outline-none ">
+                    <i class="ri-search-line absolute right-3 top-1/2 -translate-y-1/2 text-orange-500 text-lg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-donasi-makanan">
+        <div class="max-w-[1100px] mx-auto flex flex-wrap -mx-2">
+            <div class="box w-full md:w-1/3 px-2 mb-4">
+                <img src="../assets/image/Donasi-Makanan-Image-1.svg" alt="">
+                <h2 class="mt-3 text-[20px] font-bold text-[#000]">500 Nasi Bungkus untuk pekerja <br> jalanan di Kota
+                    Sampit</h2>
+                <p class="text-[#9A9DAC] mt-1">Oleh <span class="text-[#E3712D] font-medium">Rofiq Fadilah</span></p>
+
+                <div class="relative w-full h-3 bg-[#EFF0F2] rounded-full mt-3 overflow-hidden">
+                    <div class="absolute left-0 top-0 h-3 bg-[#2C6752]" style="width: calc(200 / 430 * 100%)"></div>
+                </div>
+
+                <div class="flex justify-between mt-2">
+                    <div class="left">
+                        <p class="text-[#000] font-medium">Jumlah donasi</p>
+                        <p class="text-[#000] font-bold">30 Porsi</p>
+                    </div>
+                    <div class="right">
+                        <p class="text-[#000] font-medium">Akhir Donasi</p>
+                        <p class="text-[#000] font-bold">28 Juni 2023</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box w-full md:w-1/3 px-2 mb-4">
+                <img src="../assets/image/Donasi-Makanan-Image-2.svg" alt="">
+                <h2 class="mt-3 text-[20px] font-bold text-[#000]">500 Nasi Bungkus untuk pekerja <br> jalanan di Kota
+                    Sampit</h2>
+                <p class="text-[#9A9DAC] mt-1">Oleh <span class="text-[#E3712D] font-medium">Rofiq Fadilah</span></p>
+                <div class=" range">
+                </div>
+                <div class="flex justify-between mt-2">
+                    <div class="left">
+                        <p class="text-[#000] font-medium">Jumlah donasi</p>
+                        <p class="text-[#000] font-bold">430 Porsi</p>
+                    </div>
+                    <div class="right relative left-[-10px]">
+                        <p class="text-[#000] font-medium">Akhir Donasi</p>
+                        <p class="text-[#000] font-bold">28 Juni 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box w-full md:w-1/3 px-2 mb-4">
+                <img src="../assets/image/Donasi-Makanan-Image-3.svg" alt="">
+                <h2 class="mt-3 text-[20px] font-bold text-[#000]">500 Nasi Bungkus untuk pekerja <br> jalanan di Kota
+                    Sampit</h2>
+                <p class="text-[#9A9DAC] mt-1">Oleh <span class="text-[#E3712D] font-medium">Rofiq Fadilah</span></p>
+                <div class=" range">
+                </div>
+                <div class="flex justify-between mt-2">
+                    <div class="left">
+                        <p class="text-[#000] font-medium">Jumlah donasi</p>
+                        <p class="text-[#000] font-bold">430 Porsi</p>
+                    </div>
+                    <div class="right relative left-[-10px]">
+                        <p class="text-[#000] font-medium">Akhir Donasi</p>
+                        <p class="text-[#000] font-bold">28 Juni 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>
