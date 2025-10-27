@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcare Official Platform | List Donasi Makanan</title>
+    <link rel="icon" href="../assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative pt-[10px] md:pt-[72px]">
+
+    <div class="hidden md:block">
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <a href="../index.html">
+                        <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                    </a>
+                </div>
+                <ul class="hidden md:flex items-center gap-8">
+                    <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Tentang</a></li>
+                    <li><a href="#" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                </ul>
+                <button id="menu-btn"
+                    class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                    <i class="ri-menu-line"></i>
+                </button>
+                <div id="mobile-menu"
+                    class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                    <button id="close-btn"
+                        class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <a href="#" class="hover:underline">Program Donasi</a>
+                    <a href="#" class="hover:underline">Tentang</a>
+                    <a href="#" class="hover:underline">Hubungi Kami</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="block md:hidden">
+
+        <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+            <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+                <div class="flex items-center gap-2">
+                    <a href="../index.html">
+                        <i class="ri-arrow-left-line text-2xl text-[#fff]"></i>
+                    </a>
+                </div>
+                <h2
+                    class="absolute text-xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-semibold">
+                    Sedekah Makanan
+                </h2>
+            </div>
+
+        </nav>
+    </div>
+
+    <section
+        class="home max-w-[1100px] mx-auto px-0 md:px-6 py-0 md:py-10 flex flex-col md:flex-row gap-10 items-start relative overflow-hidden">
+
+        <div class="left ml-0 md:ml-[18px] flex-1 order-1 md:order-1 relative w-full md:w-auto">
+
+            <!-- Gambar full di HP -->
+            <img src="../assets/image/Detail-Donasi-Makanan-1.svg" alt=""
+                class="block md:hidden w-full h-[260px] object-cover relative object-center m-0 p-0">
+
+            <!-- Gambar normal di desktop -->
+            <img src="../assets/image/Detail-Donasi-Makanan-1.svg" alt=""
+                class="hidden md:block w-full max-w-[400px] rounded-md mb-6">
+
+            <!-- Tombol donasi (desktop) -->
+            <div class="mt-72 md:mt-0 md:mb-6 flex justify-center md:justify-start">
+                <a href="#">
+                    <button
+                        class="bg-[#E3712D] hidden md:block text-[17px] text-white px-8 w-full md:w-[400px] py-3 rounded-md font-semibold transition hover:bg-[#d16224]">
+                        Ikut Berdonasi
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div
+            class="right ml-0 md:ml-[-200px] flex-1 order-2 md:order-2 flex flex-col items-start px-4 md:px-0 mt-[-310px] md:mt-0 relative z-10">
+
+            <h2 class="text-[#000] text-[24px] md:text-[28px] font-semibold mb-3">
+                500 Nasi Bungkus untuk pekerja jalanan di Kota Sampit
+            </h2>
+
+            <p class="text-[#000] text-[16px] font-medium mb-4">
+                Total donasi telah dibagikan <br class="block md:hidden"> <span
+                    class="text-[#E3712D] text-[20px] md:text-[16px] font-bold mt-2 md:mt-0">430
+                    Porsi</span>
+            </p>
+
+            <div class="range w-full h-3 bg-[#EFF0F2] rounded-full mb-6">
+                <div id="progressdetail" class="h-full bg-[#2C6752] rounded-full" style="width: 0%;"></div>
+            </div>
+
+            <div class="flex justify-between items-center w-full mb-6 text-center">
+                <div class="flex-1 min-w-0">
+                    <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Donasi dibagikan
+                    </p>
+                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">Setiap Hari</p>
+                </div>
+
+                <img src="../assets/image/line.svg" alt="" class=" mx-2">
+
+                <div class="flex-1 min-w-0">
+                    <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Target Donasi</p>
+                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">500 Porsi</p>
+                </div>
+
+                <img src="../assets/image/line.svg" alt="" class=" mx-2">
+
+                <div class="flex-1 min-w-0">
+                    <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Akhir Donasi</p>
+                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">28 Juni 2023</p>
+                </div>
+            </div>
+
+
+            <h2 class="text-[#000] font-bold text-[24px] mb-2">Deskripsi</h2>
+            <p class="text-[#737373] font-medium text-[16px] mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac erat arcu. Cras
+                maximus consectetur diam, quis venenatis nisl condimentum in. Fusce pretium lacus ac
+                ligula lobortis rutrum. Duis magna risus, consectetur at volutpat vel, imperdiet vel
+                diam. Vivamus convallis lorem tellus, sed iaculis neque dictum quis. Aenean efficitur
+                cursus dictum. Etiam id iaculis ligula, sit amet faucibus risus.
+            </p>
+
+            <h2 class="text-[#000] font-bold text-[24px] mb-2">Lokasi Pengantaran Donasi</h2>
+            <p class="mb-3">Anda dapat menyerahkan donasi langsung ke :</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.600310114025!2d112.95868629999998!3d-2.53946535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de2bfb5f089f223%3A0x2e741f8a2e7af876!2sSampit%2C%20Mentawa%20Baru%20Hulu%2C%20Mentawa%20Baru%20Ketapang%2C%20East%20Kotawaringin%20Regency%2C%20Central%20Kalimantan!5e0!3m2!1sen!2sid!4v1761458034103!5m2!1sen!2sid"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- Tombol donasi mobile -->
+            <a href="#" class="w-full mb-10">
+                <button
+                    class="bg-[#E3712D] mt-10 block md:hidden text-[17px] text-white w-full py-3 rounded-md font-semibold transition hover:bg-[#d16224]">
+                    Ikut Berdonasi
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <script src="../assets/js/detail-donasi-makanan.js"></script>
+    <script src=" ../assets/js/navbar.js">
+    </script>
+</body>
+
+</html>
