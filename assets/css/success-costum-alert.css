@@ -1,0 +1,30 @@
+.swal-title-custom {
+    font-size: 24px !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+
+.swal-text-custom {
+    font-size: 16px !important;
+    color: #737373 !important;
+}
+
+.swal-confirm-btn {
+    width: 100% !important;
+    padding: 12px !important;
+    border-radius: 2px !important;
+    font-size: 16px !important;
+    background-color: #E3712D !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.swal2-actions {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0 1rem !important;
+}
+
+.swal2-actions .swal2-confirm {
+    flex: 1 !important;
+}

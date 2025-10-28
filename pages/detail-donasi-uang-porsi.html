@@ -74,39 +74,24 @@
             <div
                 class="bg-white rounded-xl shadow-lg w-[90%] max-w-md p-6 relative animate__animated animate__fadeIn scale-100">
 
-                <h2 class="text-xl font-bold text-[#000] mb-4 text-left">Masukan porsi donasi</h2>
+                <h2 class="text-xl font-bold text-[#000] mb-4 text-left">Masukan nominal donasi</h2>
 
                 <form id="formDonasi" class="flex flex-col gap-4">
                     <div>
-                        <label for="jumlahPorsi" class="block text-[15px] font-medium text-[#000] mb-1">
-                            Jumlah Porsi Donasi
+                        <label for="nominal-donasi" class="block text-[15px] font-medium text-[#000] mb-1">
+                            Nominal Donasi
                         </label>
-                        <input type="number" id="jumlahPorsi" name="jumlahPorsi" min="1"
-                            placeholder="Masukkan jumlah porsi"
-                            class="w-full outline-none border border-gray-300 rounded-md p-2 " required>
+                        <div class="relative">
+                            <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-700">Rp</span>
+                            <input type="text" id="nominal-donasi" name="nominal-donasi" placeholder="0"
+                                class="w-full outline-none border border-gray-300 rounded-md p-2 pl-10 pr-2 text-right"
+                                required>
+                        </div>
+                        <p class="mt-2 text-gray-600 font-medium">Saldo kamu saat ini Rp 50.000</p>
+                        <p class="text-gray-600 font-medium">Harga Perporsi Rp 15.000</p>
                     </div>
 
-                    <div>
-                        <label for="opsiDonasi" class="block text-[15px] font-medium text-[#000] mb-1">
-                            Penyerahan Donasi
-                        </label>
-                        <select id="opsiDonasi" name="opsiDonasi"
-                            class="w-full border border-gray-300 rounded-md p-2 outline-none" required>
-                            <option selected disabled>Pilih Metode Penyerahan</option>
-                            <option value="ambil">Diambil ke lokasi Anda</option>
-                            <option value="antar">Antar sendiri ke lokasi</option>
-                        </select>
-                    </div>
-
-                    <div id="lokasiContainer" class="hidden mt-2">
-                        <label class="block text-[15px] font-medium text-[#000] mb-2">Lokasi Anda</label>
-                        <iframe id="mapFrame" width="100%" height="150" class="rounded-md border border-gray-300"
-                            style="display:none;" loading="lazy" allowfullscreen=""
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                    <div class="flex justify-end gap-3 mt-4">
+                    <div class="flex justify-end gap-3 mt-2">
 
                         <button type="submit"
                             class="px-4 py-2 w-full rounded-md bg-[#E3712D] text-white font-semibold  transition">
@@ -119,10 +104,10 @@
 
         <div class="left ml-0 md:ml-[18px] flex-1 order-1 md:order-1 relative w-full md:w-auto">
 
-            <img src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
+            <img src="../assets/image/Detail-Donasi-Makanan-1.svg" alt=""
                 class="block md:hidden w-full h-[260px] object-cover relative object-center m-0 p-0">
 
-            <img src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
+            <img src="../assets/image/Detail-Donasi-Makanan-1.svg" alt=""
                 class="hidden md:block w-full max-w-[400px] rounded-md mb-6">
 
             <div class="mt-72 md:mt-0 md:mb-6 flex justify-center md:justify-start">
@@ -139,12 +124,13 @@
             class="right ml-0 md:ml-[-200px] flex-1 order-2 md:order-2 flex flex-col items-start px-4 md:px-0 mt-[-310px] md:mt-0 relative z-10">
 
             <h2 class="text-[#000] text-[24px] md:text-[28px] font-semibold mb-3">
-                Penyaluran Makanan di Dapur Darurat Cilandak Timur
+                500 Nasi Bungkus untuk pekerja jalanan di Kota
+                Sampit
             </h2>
 
             <p class="text-[#000] text-[16px] font-medium mb-4">
                 Total donasi telah dibagikan <br class="block md:hidden"> <span
-                    class="text-[#E3712D] text-[20px] md:text-[16px] font-bold mt-2 md:mt-0">200
+                    class="text-[#E3712D] text-[20px] md:text-[16px] font-bold mt-2 md:mt-0">120
                     Porsi</span>
             </p>
 
@@ -154,45 +140,40 @@
 
             <div class="flex justify-between items-center w-full mb-6 text-center">
                 <div class="flex-1 min-w-0">
-                    <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Donasi dibagikan
+                    <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Harga Perporsi
                     </p>
-                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">Setiap Hari</p>
+                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">Rp 15.000</p>
                 </div>
 
                 <img src="../assets/image/line.svg" alt="" class=" mx-2">
 
                 <div class="flex-1 min-w-0">
                     <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Target Donasi</p>
-                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">200 Porsi</p>
+                    <p class="text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">500 Porsi</p>
                 </div>
 
                 <img src="../assets/image/line.svg" alt="" class=" mx-2">
 
                 <div class="flex-1 min-w-0">
                     <p class="text-[#000] font-medium mb-1 text-[13px] sm:text-[16px] leading-tight">Akhir Donasi</p>
-                    <p class="hidden md:block text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">20
-                        November 2025</p>
-                    <p class="block md:hidden text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">20
-                        Nov 2025</p>
+                    <p class="hidden md:block text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">5
+                        Januari 2026</p>
+                    <p class="block md:hidden text-[#000] font-bold text-[13px] sm:text-[16px] leading-tight">5 Jan 2026
+                    </p>
                 </div>
             </div>
 
 
             <h2 class="text-[#000] font-bold text-[24px] mb-2">Deskripsi</h2>
-            <p class="text-[#737373] font-medium text-[16px] mb-6">
-                Banjir yang melanda Cilandak Timur membuat banyak warga kehilangan akses terhadap makanan layak. Melalui
-                program ini, kami mengajak kamu untuk berbagi kebaikan dengan berdonasi makanan yang akan diolah dan
-                disalurkan melalui dapur darurat. Donasi bisa dikirim langsung atau dijemput oleh tim kami. Setiap paket
-                makanan yang kamu berikan akan membantu warga terdampak bertahan di masa sulit ini. Bersama, kita
-                wujudkan kepedulian nyata untuk sesama.
+            <p class="text-[#737373] font-medium text-[16px] ">
+                Masih banyak pekerja jalanan di Kota Sampit (Kalimantan Tengah), yang berjuang setiap hari di bawah
+                terik
+                matahari tanpa
+                kepastian makan siang. Melalui program ini, kami mengajak kamu untuk ikut berbagi dengan menyalurkan
+                donasi uang mulai dari Rp15.000. Setiap donasi akan digunakan untuk menyiapkan nasi bungkus
+                bergizi yang dibagikan langsung kepada para pekerja jalanan. Bersama, kita bisa menghadirkan senyum dan
+                tenaga baru bagi mereka yang tak pernah lelah bekerja demi keluarga.
             </p>
-
-            <h2 class="text-[#000] font-bold text-[24px] mb-2">Lokasi Pengantaran Donasi</h2>
-            <p class="mb-3">Anda dapat menyerahkan donasi langsung ke :</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31726.260383940567!2d106.81294555!3d-6.292284899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1f971a243d7%3A0x3333431af7020c60!2sEast%20Cilandak%2C%20Pasar%20Minggu%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1761607877872!5m2!1sen!2sid"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <!-- Tombol donasi mobile -->
             <a href="#" class="w-full mb-10">
@@ -206,7 +187,7 @@
 
     </section>
 
-    <script src="../assets/js/detail-donasi-makanan.js"></script>
+    <script src="../assets/js/detail-donasi-uang-porsi.js"></script>
     <script src=" ../assets/js/navbar.js">
     </script>
 </body>

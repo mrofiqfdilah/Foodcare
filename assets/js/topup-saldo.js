@@ -42,27 +42,33 @@ boxes.forEach(box => {
     });
 });
 
+// Ambil waktu saat ini di Indonesia (WIB)
+const now = new Date();
 
-const paymentBtns = document.querySelectorAll('.payment-btn');
+// Tambah 5 jam
+now.setHours(now.getHours() + 5);
 
-paymentBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
-        const isActive = this.classList.contains('border-orange-500');
+// Format tanggal dan jam dengan locale Indonesia
+const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+};
 
-        // Hapus border oranye dari semua tombol
-        paymentBtns.forEach(b => {
-            b.classList.remove('border-orange-500');
-            b.classList.add('border-gray-300'); // sesuaikan border default
-        });
+const batasWaktu = now.toLocaleString('id-ID', options);
 
-        if (!isActive) {
-            // Jika sebelumnya tidak aktif, aktifkan tombol yang diklik
-            this.classList.add('border-orange-500');
-            this.classList.remove('border-gray-300');
-        } else {
-            // Jika diklik lagi (toggle off), border kembali default
-            this.classList.remove('border-orange-500');
-            this.classList.add('border-gray-300');
-        }
-    });
+// Tampilkan ke dalam elemen <p>
+document.getElementById("batas-waktu").textContent = `Batas waktu pembayaran hingga ${batasWaktu} WIB`;
+
+
+const copyBtn = document.getElementById("copyBtn");
+const nominal = document.getElementById("nominal");
+
+copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(nominal.value);
+    copyBtn.textContent = "Disalin!";
+    setTimeout(() => (copyBtn.textContent = "Salin"), 1500);
 });

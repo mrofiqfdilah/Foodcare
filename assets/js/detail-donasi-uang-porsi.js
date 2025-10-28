@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     const progresses = [
-        { id: 'progressdetail', target: 130, max: 200 },
+        { id: 'progressdetail', target: 120, max: 500 },
     ];
 
     progresses.forEach(item => {
@@ -19,9 +19,6 @@ window.addEventListener('load', () => {
 
 const modal = document.getElementById('donasiModal');
 const openButtons = document.querySelectorAll('.btn-donasi');
-const opsiDonasi = document.getElementById('opsiDonasi');
-const lokasiContainer = document.getElementById('lokasiContainer');
-const mapFrame = document.getElementById('mapFrame');
 
 // Buka modal
 openButtons.forEach(btn => {
@@ -35,41 +32,29 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.classList.add('hidden');
 });
 
-opsiDonasi.addEventListener('change', function () {
-    if (this.value === 'ambil') {
-        lokasiContainer.classList.remove('hidden');
-        mapFrame.style.display = 'none';
+// Format angka menjadi ribuan (1.000, 10.000, dst)
+const inputNominal = document.getElementById('nominal-donasi');
 
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const lat = position.coords.latitude;
-                    const lon = position.coords.longitude;
+inputNominal.addEventListener('input', function (e) {
 
-                    mapFrame.src = `https://www.google.com/maps?q=${lat},${lon}&z=15&output=embed`;
-                    mapFrame.style.display = 'block';
-                },
-                () => {
-                    mapStatus.textContent = 'Tidak dapat mengambil lokasi. Mohon izinkan akses lokasi.';
-                }
-            );
-        } else {
-            mapStatus.textContent = 'Browser Anda tidak mendukung geolokasi.';
-        }
-    } else {
-        lokasiContainer.classList.add('hidden');
-        mapFrame.style.display = 'none';
-    }
+    let value = e.target.value.replace(/\D/g, '');
+
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+    e.target.value = value;
 });
 
 document.getElementById('formDonasi').addEventListener('submit', (e) => {
     e.preventDefault();
 
+
+    value_donasi = document.getElementById("nominal-donasi").value
+
     document.getElementById('donasiModal').classList.add('hidden');
 
     Swal.fire({
-        title: 'Terima kasih orang baik, Sedekah Makananmu Berhasil!',
-        text: 'Tim FoodCare akan segera ke tempatmu untuk penjemputan donasi, harap selalu aktifkan kontak yang terhubung!',
+        title: `Terima kasih orang baik, Sedekah Uangmu sebesar Rp ${value_donasi}  Berhasil!`,
+        text: 'Tim FoodCare akan mengelola dan mengirimkan laporan untuk kamu, kemana makanan akan diberikan!',
         imageUrl: '../assets/image/Success-Icon.svg',
         imageWidth: 200,
         imageHeight: 200,

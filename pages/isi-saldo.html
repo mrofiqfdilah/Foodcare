@@ -20,7 +20,9 @@
         <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
             <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
                 <div class="flex items-center gap-2">
-                    <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                    <a href="../index.html">
+                        <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                    </a>
                 </div>
                 <ul class="hidden md:flex items-center gap-8">
                     <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
@@ -150,18 +152,16 @@
 
             <h2 class="text-lg font-bold mb-4">Pilih Metode Pembayaran</h2>
             <div class="mb-7">
-                <button class="payment-btn flex mb-3 items-center gap-2 border rounded px-3 py-2 w-full"
-                    data-value="bca">
+                <button style="border:1.5px solid orange"
+                    class="payment-btn flex mb-3 items-center gap-2 border rounded px-3 py-2 w-full" data-value="bca">
                     <img src="../assets/image/Topup-Saldo-Bank-1.svg" alt="">
                     <p>BCA Virtual Account</p>
                 </button>
-                <button class="payment-btn flex items-center gap-2 border rounded px-3 py-2 w-full" data-value="gopay">
-                    <img src="../assets/image/Topup-Saldo-Bank-2.png" class="w-8" alt="">
-                    <p class="ml-1">Gopay</p>
-                </button>
             </div>
-            <button class="w-full bg-[#E3712D] text-white font-bold py-2 rounded">Isi Saldo
-                Sekarang</button>
+            <a href="instruksi-pembayaran.html">
+                <button class="w-full bg-[#E3712D] text-white font-bold py-2 rounded">Isi Saldo
+                    Sekarang</button>
+            </a>
         </div>
     </section>
 
