@@ -35,9 +35,9 @@
                     class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
                     <i class="ri-close-line"></i>
                 </button>
-                <a href="#" class="hover:underline">Program Donasi</a>
-                <a href="#" class="hover:underline">Tentang</a>
-                <a href="#" class="hover:underline">Hubungi Kami</a>
+                <a href="#" class="hover:underline text-3xl">Program Donasi</a>
+                <a href="#" class="hover:underline text-3xl">Tentang</a>
+                <a href="#" class="hover:underline text-3xl">Hubungi Kami</a>
             </div>
         </div>
     </nav>
@@ -59,17 +59,10 @@
                             class="w-[358px] h-[130px] object-cover rounded-lg" />
                     </div>
                     <div class="swiper-slide flex justify-center">
-                        <img src="./assets/image/Home-Banner-1.svg"
-                            class="w-[358px] h-[130px] object-cover rounded-lg" />
-                    </div>
-                    <div class="swiper-slide flex justify-center">
                         <img src="./assets/image/Home-Banner-2.svg"
                             class="w-[358px] h-[130px] object-cover rounded-lg" />
                     </div>
-                    <div class="swiper-slide flex justify-center">
-                        <img src="./assets/image/Home-Banner-3.svg"
-                            class="w-[358px] h-[130px] object-cover rounded-lg" />
-                    </div>
+
                 </div>
                 <div class="swiper-pagination !bottom-2"></div>
             </div>
@@ -104,30 +97,41 @@
         </div>
     </section>
 
-    <section class="mb-0 md:mb-5 pilihan-donasi mx-auto max-w-[1100px] mt-10 px-2 sm:px-0">
+
+    <section class="mb-0 md:mb-5 pilihan-donasi mx-auto max-w-[1110px] mt-10 px-4 sm:px-0">
         <h2 class="text-xl md:text-2xl font-extrabold text-[#000] mb-6">Ayo Bersedekah</h2>
-        <div class="flex justify-center items-center gap-2 md:gap-4 flex-nowrap overflow-x-auto md:overflow-visible">
-            <a href="./pages/list-donasi-makanan.html">
+
+        <div class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+            <a href="./pages/list-donasi-makanan.html" class="w-full">
                 <div style="border:1.4px solid #DEDEDE"
-                    class="min-w-[110px] sm:min-w-[130px] md:min-w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center shrink-0">
-                    <img src="./assets/image/Icon-Sedekah-Makanan.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
-                    <p class="text-[#000] font-semibold text-sm md:text-[20px]">Makanan</p>
+                    class="rounded-lg flex flex-col justify-center items-center py-4 sm:py-6 md:py-8 h-[110px] md:h-[188px]">
+                    <img src="./assets/image/Icon-Sedekah-Makanan.svg" alt=""
+                        class="w-[55px] sm:w-[65px] md:w-[110px] mb-3">
+                    <p class="text-[#000] font-semibold text-xs sm:text-sm md:text-[20px]">Makanan</p>
                 </div>
             </a>
-            <a href="./pages/list-donasi-uang-porsi.html">
+
+            <a href="./pages/list-donasi-uang-porsi.html" class="w-full">
                 <div style="border:1.4px solid #DEDEDE"
-                    class="min-w-[110px] sm:min-w-[130px] md:min-w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center shrink-0">
-                    <img src="./assets/image/Icon-Sedekah-Uang.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
-                    <p class="text-[#000] font-semibold text-sm md:text-[20px]">Uang Perporsi</p>
+                    class="rounded-lg flex flex-col justify-center items-center py-4 sm:py-6 md:py-8 h-[110px] md:h-[188px]">
+                    <img src="./assets/image/Icon-Sedekah-Uang.svg" alt=""
+                        class="w-[55px] sm:w-[65px] md:w-[110px] mb-3">
+                    <p class="text-[#000] font-semibold text-xs sm:text-sm md:text-[20px]">Uang Perporsi</p>
                 </div>
             </a>
-            <div style="border:1.4px solid #DEDEDE"
-                class="min-w-[110px] sm:min-w-[130px] md:min-w-[348px] h-[110px] md:h-[188px] rounded-lg flex flex-col justify-center items-center shrink-0">
-                <img src="./assets/image/Icon-Buat-Donasi.svg" alt="" class="w-[55px] md:w-[110px] mb-3">
-                <p class="text-[#000] font-semibold text-sm md:text-[20px]">Buat Donasi</p>
-            </div>
+
+            <a href="./pages/buat-donasi.html" class="w-full">
+                <div style="border:1.4px solid #DEDEDE"
+                    class="rounded-lg flex flex-col justify-center items-center py-4 sm:py-6 md:py-8 h-[110px] md:h-[188px]">
+                    <img src="./assets/image/Icon-Buat-Donasi.svg" alt=""
+                        class="w-[55px] sm:w-[65px] md:w-[110px] mb-3">
+                    <p class="text-[#000] font-semibold text-xs sm:text-sm md:text-[20px]">Buat Donasi</p>
+                </div>
+            </a>
         </div>
     </section>
+
+
 
 
     <section class="px-4 md:px-20 py-10">

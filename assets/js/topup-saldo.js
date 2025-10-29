@@ -58,17 +58,57 @@ const options = {
     minute: '2-digit',
 };
 
+// Ubah ke format lokal
 const batasWaktu = now.toLocaleString('id-ID', options);
 
-// Tampilkan ke dalam elemen <p>
-document.getElementById("batas-waktu").textContent = `Batas waktu pembayaran hingga ${batasWaktu} WIB`;
+// Tampilkan ke dua elemen (desktop & mobile)
+const batasDesktop = document.getElementById("batas-waktu");
+const batasMobile = document.getElementById("batas-waktu-2");
 
+if (batasDesktop) {
+    batasDesktop.textContent = `Batas waktu pembayaran hingga ${batasWaktu} WIB`;
+}
 
+if (batasMobile) {
+    batasMobile.textContent = `Batas waktu pembayaran hingga ${batasWaktu} WIB`;
+}
+
+// Tombol salin nomor VA
 const copyBtn = document.getElementById("copyBtn");
 const nominal = document.getElementById("nominal");
 
-copyBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText(nominal.value);
-    copyBtn.textContent = "Disalin!";
-    setTimeout(() => (copyBtn.textContent = "Salin"), 1500);
+if (copyBtn && nominal) {
+    copyBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText(nominal.value);
+        copyBtn.textContent = "Disalin!";
+        setTimeout(() => (copyBtn.textContent = "Salin"), 1500);
+    });
+}
+
+
+const accordions = document.querySelectorAll('.accordion-header');
+
+accordions.forEach((header) => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('i');
+
+        // Tutup accordion lain
+        document.querySelectorAll('.accordion-content').forEach((other) => {
+            if (other !== content) {
+                other.style.maxHeight = null;
+                other.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+            }
+        });
+
+        // Toggle buka/tutup
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.classList.remove('rotate-180');
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.classList.add('rotate-180');
+        }
+    });
 });
+

@@ -45,12 +45,13 @@
                 </div>
             </div>
         </nav>
-        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center ">
-            <div class="p-5 w-full max-w-[1060px]">
+        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center">
+            <div class="p-5 w-full max-w-[1132px]">
                 <h2 class="text-[#2C6752] font-semibold text-[24px]">Konfirmasi Pembayaran</h2>
-                <p id="batas-waktu" class="text-[#2C6752] font-normal text-[16px] mb-3"></p>
+                <p id="batas-waktu-2" class="text-[#2C6752] font-normal text-[16px] mb-3"></p>
             </div>
         </div>
+
     </div>
 
     <div class="block md:hidden">
@@ -64,13 +65,17 @@
                 </div>
                 <h2
                     class="absolute text-xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-semibold">
-                    Topup Saldo
+                    Instruksi Bayar
                 </h2>
             </div>
 
         </nav>
-
-
+        <div class="desc bg-[#E1F7F0] mt-[-8px] flex justify-center items-center ">
+            <div class="p-5 w-full max-w-[1060px] ">
+                <h2 class="text-[#2C6752] font-semibold text-[24px]">Konfirmasi Pembayaran</h2>
+                <p id="batas-waktu" class="text-[#2C6752] font-normal text-[16px] mb-3"></p>
+            </div>
+        </div>
     </div>
 
     <section class=" top-up">
@@ -87,7 +92,7 @@
                     </button>
                 </div>
             </div>
-            <div class="mb-2">
+            <div class="mb-5">
                 <label for="nominal" class="block text-[18px] mb-1 font-bold">Total Pembayaran</label>
                 <div class="relative">
                     <input type="text" disabled readonly placeholder="Rp 50.000"
@@ -96,18 +101,72 @@
                     <div class="mt-3 space-y-1">
                         <p class="flex justify-between  font-medium mb-2 text-[16px] text-[#737373]">
                             <span>Top Up Anda</span>
-                            <span>Rp 48.000</span>
+                            <span class="font-semibold text-[#000]">Rp 48.000</span>
                         </p>
                         <p class="flex justify-between  font-medium text-[16px] text-[#737373]">
                             <span>Biaya Admin</span>
-                            <span>Rp 2.000</span>
+                            <span class="font-semibold text-[#000]">Rp 2.000</span>
                         </p>
                     </div>
                 </div>
-
             </div>
 
-            <a href="">
+            <div class="mb-10">
+                <label class="block text-[18px] mb-3 font-bold">Lihat Cara Pembayaran</label>
+                <div class="border rounded-lg mb-2 overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-3 text-left font-semibold text-[#000] focus:outline-none accordion-header">
+                        <span>BCA Mobile Banking (m-BCA)</span>
+                        <i class="ri-arrow-down-s-line text-orange-500 text-xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-3">
+                        <ul class="list-decimal ml-5 text-[#555] text-[15px] py-2 space-y-1">
+                            <li>Login ke aplikasi m-BCA</li>
+                            <li>Pilih menu "m-Transfer"</li>
+                            <li>Pilih "BCA Virtual Account"</li>
+                            <li>Masukkan nomor VA dan nominal</li>
+                            <li>Konfirmasi dan selesaikan pembayaran</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 2 -->
+                <div class="border rounded-lg mb-2 overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-3 text-left font-semibold text-[#000] focus:outline-none accordion-header">
+                        <span>BCA Internet Banking (Klik BCA)</span>
+                        <i class="ri-arrow-down-s-line text-orange-500 text-xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-3">
+                        <ul class="list-decimal ml-5 text-[#555] text-[15px] py-2 space-y-1">
+                            <li>Login ke KlikBCA Individual</li>
+                            <li>Pilih menu "Transfer Dana"</li>
+                            <li>Pilih "Transfer ke BCA Virtual Account"</li>
+                            <li>Masukkan nomor VA dan nominal</li>
+                            <li>Konfirmasi dan selesaikan transaksi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="border rounded-lg mb-2 overflow-hidden">
+                    <button
+                        class="w-full flex justify-between items-center p-3 text-left font-semibold text-[#000] focus:outline-none accordion-header">
+                        <span>ATM BCA</span>
+                        <i class="ri-arrow-down-s-line text-orange-500 text-xl transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-3">
+                        <ul class="list-decimal ml-5 text-[#555] text-[15px] py-2 space-y-1">
+                            <li>Masukkan kartu ATM dan PIN</li>
+                            <li>Pilih menu "Transaksi Lainnya"</li>
+                            <li>Pilih "Transfer" → "Ke BCA Virtual Account"</li>
+                            <li>Masukkan nomor VA dan nominal</li>
+                            <li>Periksa detail dan konfirmasi transaksi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="../index.html">
                 <button class="w-full bg-[#E3712D] text-white font-bold py-2 rounded">Kembali ke Beranda</button>
             </a>
         </div>
