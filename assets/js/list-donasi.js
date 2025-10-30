@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
     progresses.forEach(item => {
         const el = document.getElementById(item.id);
-        if (!el) return; // jika element tidak ada, skip
+        if (!el) return;
         const percent = (item.target / item.max) * 100;
 
         el.style.transition = 'width 1.5s ease-out';

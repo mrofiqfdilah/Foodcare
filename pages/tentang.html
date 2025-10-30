@@ -18,59 +18,139 @@
 <body class="relative  pt-[72px]">
     <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
         <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+            <!-- LOGO -->
             <div class="flex items-center gap-2">
-                <a href="home-page.html">
+                <a href="../index.html">
                     <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
                 </a>
             </div>
+
+            <!-- MENU DESKTOP -->
             <ul class="hidden md:flex items-center gap-8">
-                <li><a href="./home-page.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
-                <li><a href="./tentang.html" class="text-white text-[16px] font-medium">Tentang</a></li>
-                <li><a href="./user-akun.html" class="text-white text-[16px] font-medium">Akun</a></li>
+                <li><a href="../index.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                <li><a href="./tentang.html" class="text-white text-[16px] font-bold">Tentang</a></li>
                 <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                <li>
+                    <a href="./pages/login.html">
+                        <button
+                            class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md hover:bg-[#E3F2ED] transition-all">
+                            Masuk / Daftar
+                        </button>
+                    </a>
+                </li>
             </ul>
+
+            <!-- HAMBURGER BUTTON -->
             <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
                 <i class="ri-menu-line"></i>
             </button>
+
+            <!-- MOBILE MENU -->
             <div id="mobile-menu"
                 class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+
+                <!-- CLOSE BUTTON -->
                 <button id="close-btn"
                     class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
                     <i class="ri-close-line"></i>
                 </button>
-                <a href="./home-page.html" class="hover:underline text-3xl">Program Donasi</a>
+
+                <!-- LINK MENU MOBILE -->
+                <a href="../index.html" class="hover:underline text-3xl">Program Donasi</a>
                 <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
-                <a href="./user-akun.html" class="hover:underline text-3xl">Akun</a>
                 <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
+
+                <!-- TOMBOL MASUK / DAFTAR -->
+                <a href="./pages/login.html">
+                    <button
+                        class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md hover:bg-[#E3F2ED] transition-all">
+                        Masuk / Daftar
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
 
     <section class="tentang text-center flex flex-col items-center px-4 py-12">
-        <!-- Tombol -->
         <button class="bg-[#FDF1EA] text-[18px] text-[#E3712D] px-4 py-2 rounded-full font-semibold mb-4">
             Tentang Kami
         </button>
-
-        <!-- Judul -->
         <h2 class="text-[#000] text-[22px] sm:text-[27px] md:text-[32px] font-bold leading-snug mb-4 max-w-[700px]">
             <span class="text-[#2C6752]">FoodCare</span> with Food We Care
         </h2>
-
-        <!-- Deskripsi -->
         <p class="text-[#434343] text-[15px] sm:text-[16px] leading-relaxed max-w-[750px] mb-8">
             FoodCare adalah platform inovatif yang bertujuan untuk mengatasi dua masalah besar sekaligus —
             <strong>Kelaparan</strong> dan <strong>Pemborosan Makanan</strong>.
             FoodCare berkomitmen untuk mendukung pencapaian Sustainable Development Goals (SDGs)
             Nomor 2, yaitu <em>"Zero Hunger"</em>.
         </p>
-
-        <!-- Gambar -->
         <img src="../assets/image/image-tentang.svg" alt="Tentang FoodCare"
             class="w-full max-w-[750px] h-auto rounded-xl object-contain">
     </section>
 
+    <section class="cta-section mt-[-30px] flex justify-center px-4 py-12">
+        <div class="cta relative max-w-[1100px] w-full rounded-xl overflow-hidden">
+            <img src="../assets/image/cta.svg" alt="CTA Image"
+                class="w-full h-[210px] sm:h-[230px] md:h-[240px] object-cover rounded-xl">
+            <div class="absolute inset-0 flex flex-col justify-center text-white px-4 sm:px-8">
+                <h2
+                    class="font-bold text-[20px] sm:text-[18px] md:text-[28px] leading-tight mb-3 text-left drop-shadow-md">
+                    Ayo Mulai Gerakan Berbagimu, <br>
+                    Dengan Makanan Bersama FoodCare!
+                </h2>
+                <a href="#" class="bg-[#147D58] hover:bg-[#0f5a3f] transition-colors rounded-md mt-2 px-5 py-2 w-fit">
+                    <button class="text-white font-semibold text-sm">Mulai Sekarang</button>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <section class="footer bg-[#275B48] text-white px-6 md:px-0 " style="padding-top:3rem; padding-bottom: 0.5rem;">
+        <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="left space-y-4">
+                <img src="../assets/image/Website-Logo.svg" alt="Logo FoodCare" class="w-[180px]">
+                <p class="text-[#CDCDCD] text-[15px] leading-relaxed">
+                    Foodcare adalah platform donasi makanan yang menghubungkan donatur dengan penerima manfaat, agar
+                    setiap
+                    hidangan berlebih bisa menjadi berkah bagi sesama.
+                </p>
+            </div>
+            <div class="center grid grid-cols-2 gap-6">
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Navigasi</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Program Donasi</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Tentang Foodcare</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Akun</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Sosial Media</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Tiktok</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-[#FFD700] transition">Twitter (X)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right space-y-4">
+                <h2 class="font-bold text-lg">Berlangganan Berita Kami</h2>
+
+                <div class="block space-y-3">
+                    <input type="email" placeholder="Email Address"
+                        class="px-4 py-2 rounded-md border-none text-[#000] w-full">
+                    <button class="bg-[#E3712D] hover:bg-[#c85f20] text-white px-5 py-2 rounded-md transition w-full">
+                        Subscribe Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 0.1px solid #8d8a8a;" class="bottom mt-12 pt-6 text-center">
+            <p class="text-[#FFF] text-[14px] relative top-[-5px]">Copyright ©2025 - FoodCare Platform</p>
+        </div>
+    </section>
 
 
 
