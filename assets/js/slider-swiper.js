@@ -11,7 +11,9 @@ const swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 6 },
-        768: { slidesPerView: 3, spaceBetween: 8 },
+        0: { slidesPerView: 1, spaceBetween: 6 },        // HP
+        768: { slidesPerView: 3, spaceBetween: 8 },      // Tablet (default)
+        810: { slidesPerView: 2, spaceBetween: 8 },      // iPad khusus
+        1000: { slidesPerView: 3, spaceBetween: 8 },     // Laptop ke atas
     },
 });

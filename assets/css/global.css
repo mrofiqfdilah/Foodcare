@@ -6,3 +6,12 @@ body {
 .menu-transition {
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (min-width: 810px) and (max-width: 1000px) {
+
+    .footer,
+    .cta-section {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
