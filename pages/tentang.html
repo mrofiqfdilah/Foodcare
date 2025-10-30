@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcare Official Platform | Tentang Foodcare</title>
+    <link rel="icon" href="../assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative  pt-[72px]">
+    <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+        <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+            <div class="flex items-center gap-2">
+                <a href="home-page.html">
+                    <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                </a>
+            </div>
+            <ul class="hidden md:flex items-center gap-8">
+                <li><a href="./home-page.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                <li><a href="./tentang.html" class="text-white text-[16px] font-medium">Tentang</a></li>
+                <li><a href="./user-akun.html" class="text-white text-[16px] font-medium">Akun</a></li>
+                <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+            </ul>
+            <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                <i class="ri-menu-line"></i>
+            </button>
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                <button id="close-btn"
+                    class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
+                    <i class="ri-close-line"></i>
+                </button>
+                <a href="./home-page.html" class="hover:underline text-3xl">Program Donasi</a>
+                <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
+                <a href="./user-akun.html" class="hover:underline text-3xl">Akun</a>
+                <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="tentang text-center flex flex-col items-center px-4 py-12">
+        <!-- Tombol -->
+        <button class="bg-[#FDF1EA] text-[18px] text-[#E3712D] px-4 py-2 rounded-full font-semibold mb-4">
+            Tentang Kami
+        </button>
+
+        <!-- Judul -->
+        <h2 class="text-[#000] text-[22px] sm:text-[27px] md:text-[32px] font-bold leading-snug mb-4 max-w-[700px]">
+            <span class="text-[#2C6752]">FoodCare</span> with Food We Care
+        </h2>
+
+        <!-- Deskripsi -->
+        <p class="text-[#434343] text-[15px] sm:text-[16px] leading-relaxed max-w-[750px] mb-8">
+            FoodCare adalah platform inovatif yang bertujuan untuk mengatasi dua masalah besar sekaligus —
+            <strong>Kelaparan</strong> dan <strong>Pemborosan Makanan</strong>.
+            FoodCare berkomitmen untuk mendukung pencapaian Sustainable Development Goals (SDGs)
+            Nomor 2, yaitu <em>"Zero Hunger"</em>.
+        </p>
+
+        <!-- Gambar -->
+        <img src="../assets/image/image-tentang.svg" alt="Tentang FoodCare"
+            class="w-full max-w-[750px] h-auto rounded-xl object-contain">
+    </section>
+
+
+
+
+
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>
