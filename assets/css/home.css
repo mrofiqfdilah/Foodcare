@@ -59,3 +59,14 @@
         flex: 0 0 auto !important;
     }
 }
+
+#donate-section .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 1024px) {
+    #donate-section .grid {
+        grid-template-columns: repeat(3, 348px);
+        justify-content: space-between;
+    }
+}
