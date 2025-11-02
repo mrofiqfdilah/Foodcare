@@ -26,9 +26,16 @@
                     </a>
                 </div>
                 <ul class="hidden md:flex items-center gap-8">
-                    <li><a href="#" class="text-white text-[16px] font-medium">Program Donasi</a></li>
-                    <li><a href="#" class="text-white text-[16px] font-medium">Tentang</a></li>
-                    <li><a href="#" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                    <li><a href="../index.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                    <li><a href="./tentang.html" class="text-white text-[16px] font-medium">Tentang</a></li>
+                    <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                    <li>
+                        <a href="./login.html">
+                            <button class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md ">
+                                Masuk / Daftar
+                            </button>
+                        </a>
+                    </li>
                 </ul>
                 <button id="menu-btn"
                     class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
@@ -40,9 +47,14 @@
                         class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
                         <i class="ri-close-line"></i>
                     </button>
-                    <a href="#" class="hover:underline">Program Donasi</a>
-                    <a href="#" class="hover:underline">Tentang</a>
-                    <a href="#" class="hover:underline">Hubungi Kami</a>
+                    <a href="../index.html" class="hover:underline text-3xl">Program Donasi</a>
+                    <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
+                    <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
+                    <a href="./login.html">
+                        <button class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md ">
+                            Masuk / Daftar
+                        </button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -53,13 +65,13 @@
         <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
             <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
                 <div class="flex items-center gap-2">
-                    <a href="../index.html">
+                    <a href="list-donasi-makanan.html">
                         <i class="ri-arrow-left-line text-2xl text-[#fff]"></i>
                     </a>
                 </div>
                 <h2
                     class="absolute text-xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-semibold">
-                    Sedekah Makanan
+                    Detail Donasi
                 </h2>
             </div>
 
@@ -119,10 +131,10 @@
 
         <div class="left ml-0 md:ml-[18px] flex-1 order-1 md:order-1 relative w-full md:w-auto">
 
-            <img src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
+            <img id="dump" src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
                 class="block md:hidden w-full h-[260px] object-cover relative object-center m-0 p-0">
 
-            <img src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
+            <img id="dump" src="../assets/image/Donasi-Makanan-Image-5.svg" alt=""
                 class="hidden md:block w-full max-w-[400px] rounded-md mb-6">
 
             <div class="mt-72 md:mt-0 md:mb-6 flex justify-center md:justify-start">
@@ -206,9 +218,150 @@
 
     </section>
 
+    <section class="footer mt-10 bg-[#275B48] text-white px-6 md:px-0 "
+        style="padding-top:3rem; padding-bottom: 0.5rem;">
+        <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="left space-y-4">
+                <img src="../assets/image/Website-Logo.svg" alt="Logo FoodCare" class="w-[180px]">
+                <p class="text-[#CDCDCD] text-[15px] leading-relaxed">
+                    Foodcare adalah platform donasi makanan yang menghubungkan donatur dengan penerima manfaat, agar
+                    setiap
+                    hidangan berlebih bisa menjadi berkah bagi sesama.
+                </p>
+            </div>
+            <div class="center grid grid-cols-2 gap-6">
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Navigasi</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="../index.html">Program Donasi</a></li>
+                        <li><a href="tentang.html">Tentang Foodcare</a>
+                        </li>
+                        <li><a href="contact-us.html">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Sosial Media</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right space-y-4">
+                <h2 class="font-bold text-lg">Berlangganan Berita Kami</h2>
+
+                <div class="block space-y-3">
+                    <input type="email" placeholder="Email Address"
+                        class="px-4 py-2 rounded-md  outline-none border-none text-[#000] w-full">
+                    <button class="bg-[#E3712D] hover:bg-[#c85f20] text-white px-5 py-2 rounded-md transition w-full">
+                        Subscribe Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 0.1px solid #8d8a8a;" class="bottom mt-12 pt-6 text-center">
+            <p class="text-[#FFF] text-[14px] relative top-[-5px]">Copyright ©2025 - FoodCare Platform</p>
+        </div>
+    </section>
+
+
     <script src="../assets/js/detail-donasi-makanan.js"></script>
     <script src=" ../assets/js/navbar.js">
     </script>
 </body>
 
 </html>
+
+<style>
+    @media screen and (min-width: 810px) and (max-width: 1000px) {
+
+        /* === Struktur utama === */
+        .home {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+            gap: 0;
+        }
+
+        /* === Bagian kiri (gambar) === */
+        .home .left {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left #dump {
+            width: 100%;
+            height: 30vh;
+            /* kurangi tinggi, proporsional */
+            max-width: none;
+            object-fit: cover;
+            border-radius: 0;
+            margin-top: 0;
+            /* hilangkan jarak dari atas */
+        }
+
+        /* tombol donasi di bawah gambar disembunyikan */
+        .home .left .btn-donasi {
+            display: none !important;
+        }
+
+        /* === Bagian kanan (teks, deskripsi, map, tombol donasi) === */
+        .home .right {
+            width: 100%;
+            margin: 0;
+            padding: 24px;
+            text-align: left;
+            display: flex;
+            margin-top: -40px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .home .right h2,
+        .home .right p {
+            text-align: left;
+        }
+
+        /* progress bar */
+        .home .range {
+            width: 100%;
+            margin: 10px 0 20px 0;
+        }
+
+        #progressdetail,
+        #progress-makanan {
+            display: block;
+            margin-left: 0;
+        }
+
+        /* info donasi (dibagikan/target/akhir) tetap rapi */
+        .home .right .flex {
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        /* tombol donasi mobile (di bawah map) tetap muncul */
+        .home .btn-donasi {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            background-color: #E3712D;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-size: 17px;
+            transition: background 0.3s;
+        }
+
+        .home .btn-donasi:hover {
+            background-color: #d16224;
+        }
+    }
+</style>

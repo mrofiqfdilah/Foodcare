@@ -16,54 +16,40 @@
 </head>
 
 <body class="relative  pt-[72px]">
+
     <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
         <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
-            <!-- LOGO -->
             <div class="flex items-center gap-2">
                 <a href="../index.html">
                     <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
                 </a>
             </div>
-
-            <!-- MENU DESKTOP -->
             <ul class="hidden md:flex items-center gap-8">
                 <li><a href="../index.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
                 <li><a href="./tentang.html" class="text-white text-[16px] font-bold">Tentang</a></li>
                 <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
                 <li>
-                    <a href="./pages/login.html">
-                        <button
-                            class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md hover:bg-[#E3F2ED] transition-all">
+                    <a href="./login.html">
+                        <button class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md ">
                             Masuk / Daftar
                         </button>
                     </a>
                 </li>
             </ul>
-
-            <!-- HAMBURGER BUTTON -->
             <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
                 <i class="ri-menu-line"></i>
             </button>
-
-            <!-- MOBILE MENU -->
             <div id="mobile-menu"
                 class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
-
-                <!-- CLOSE BUTTON -->
                 <button id="close-btn"
                     class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
                     <i class="ri-close-line"></i>
                 </button>
-
-                <!-- LINK MENU MOBILE -->
                 <a href="../index.html" class="hover:underline text-3xl">Program Donasi</a>
                 <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
                 <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
-
-                <!-- TOMBOL MASUK / DAFTAR -->
-                <a href="./pages/login.html">
-                    <button
-                        class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md hover:bg-[#E3F2ED] transition-all">
+                <a href="./login.html">
+                    <button class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md ">
                         Masuk / Daftar
                     </button>
                 </a>
@@ -98,7 +84,9 @@
                     Ayo Mulai Gerakan Berbagimu, <br>
                     Dengan Makanan Bersama FoodCare!
                 </h2>
-                <a href="#" class="bg-[#147D58] hover:bg-[#0f5a3f] transition-colors rounded-md mt-2 px-5 py-2 w-fit">
+
+                <a href="list-donasi-makanan.html"
+                    class="bg-[#147D58] hover:bg-[#0f5a3f] transition-colors rounded-md mt-2 px-5 py-2 w-fit">
                     <button class="text-white font-semibold text-sm">Mulai Sekarang</button>
                 </a>
             </div>
@@ -119,19 +107,19 @@
                 <div>
                     <h2 class="font-bold mb-3 text-lg">Navigasi</h2>
                     <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Program Donasi</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Tentang Foodcare</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Akun</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Hubungi Kami</a></li>
+                        <li><a href="../index.html">Program Donasi</a></li>
+                        <li><a href="tentang.html">Tentang Foodcare</a>
+                        </li>
+                        <li><a href="contact-us.html">Hubungi Kami</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="font-bold mb-3 text-lg">Sosial Media</h2>
                     <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Instagram</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Tiktok</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Facebook</a></li>
-                        <li><a href="#" class="hover:text-[#FFD700] transition">Twitter (X)</a></li>
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
                     </ul>
                 </div>
             </div>
@@ -140,7 +128,7 @@
 
                 <div class="block space-y-3">
                     <input type="email" placeholder="Email Address"
-                        class="px-4 py-2 rounded-md border-none text-[#000] w-full">
+                        class="px-4 py-2 rounded-md  outline-none border-none text-[#000] w-full">
                     <button class="bg-[#E3712D] hover:bg-[#c85f20] text-white px-5 py-2 rounded-md transition w-full">
                         Subscribe Now!
                     </button>
@@ -151,8 +139,6 @@
             <p class="text-[#FFF] text-[14px] relative top-[-5px]">Copyright ©2025 - FoodCare Platform</p>
         </div>
     </section>
-
-
 
     <script src="../assets/js/navbar.js"></script>
 </body>
