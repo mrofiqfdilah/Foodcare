@@ -1,0 +1,26 @@
+ @media screen and (min-width: 810px) and (max-width: 1000px) {
+
+     html,
+     body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+     }
+
+     body {
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+     }
+
+     main,
+     .section-donasi-makanan {
+         flex: 1;
+         /* biar isi utama ngedorong footer ke bawah */
+     }
+
+     section.footer {
+         margin-top: auto;
+         /* footer selalu di bawah */
+     }
+ }

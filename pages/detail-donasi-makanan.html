@@ -276,8 +276,6 @@
 
 <style>
     @media screen and (min-width: 810px) and (max-width: 1000px) {
-
-        /* === Struktur utama === */
         .home {
             flex-direction: column;
             align-items: center;
@@ -286,7 +284,6 @@
             gap: 0;
         }
 
-        /* === Bagian kiri (gambar) === */
         .home .left {
             width: 100%;
             margin: 0;
@@ -298,20 +295,16 @@
         .left #dump {
             width: 100%;
             height: 30vh;
-            /* kurangi tinggi, proporsional */
             max-width: none;
             object-fit: cover;
             border-radius: 0;
             margin-top: 0;
-            /* hilangkan jarak dari atas */
         }
 
-        /* tombol donasi di bawah gambar disembunyikan */
         .home .left .btn-donasi {
             display: none !important;
         }
 
-        /* === Bagian kanan (teks, deskripsi, map, tombol donasi) === */
         .home .right {
             width: 100%;
             margin: 0;
@@ -325,10 +318,10 @@
 
         .home .right h2,
         .home .right p {
-            text-align: left;
+            text-align: center;
         }
 
-        /* progress bar */
+
         .home .range {
             width: 100%;
             margin: 10px 0 20px 0;
@@ -340,13 +333,11 @@
             margin-left: 0;
         }
 
-        /* info donasi (dibagikan/target/akhir) tetap rapi */
         .home .right .flex {
             justify-content: space-between;
             text-align: center;
         }
 
-        /* tombol donasi mobile (di bawah map) tetap muncul */
         .home .btn-donasi {
             display: block;
             width: 100%;
