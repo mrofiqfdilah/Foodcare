@@ -68,7 +68,6 @@ document.getElementById('formDonasi').addEventListener('submit', (e) => {
         },
     }).then(() => {
         e.target.reset();
-        document.getElementById('lokasiContainer').classList.add('hidden');
 
         window.location.href = '../../index.html';
     });

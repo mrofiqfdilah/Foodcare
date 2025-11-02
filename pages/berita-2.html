@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodcare Official Platform | Berita Foodcare</title>
+    <link rel="icon" href="../assets/image/Header-Icon.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="relative  pt-[72px]">
+
+    <nav class="bg-[#2C6752] fixed top-0 left-0 w-full z-[100] border-b border-[#3d4b45]">
+        <div class="max-w-[1140px] mx-auto flex items-center justify-between px-6 py-4 relative">
+            <div class="flex items-center gap-2">
+                <a href="../index.html">
+                    <img src="../assets/image/Website-Logo.svg" alt="Foodcare Logo">
+                </a>
+            </div>
+            <ul class="hidden md:flex items-center gap-8">
+                <li><a href="../index.html" class="text-white text-[16px] font-medium">Program Donasi</a></li>
+                <li><a href="./tentang.html" class="text-white text-[16px] font-medium">Tentang</a></li>
+                <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
+                <li>
+                    <a href="./login.html">
+                        <button class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md ">
+                            Masuk / Daftar
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <button id="menu-btn" class="text-white text-3xl md:hidden focus:outline-none transition-all duration-300">
+                <i class="ri-menu-line"></i>
+            </button>
+            <div id="mobile-menu"
+                class="fixed inset-0 bg-[#2C6752] flex flex-col items-center justify-center gap-8 text-center text-white text-[18px] font-medium opacity-0 scale-y-0 origin-top transition-all duration-300 md:hidden z-[9999] pointer-events-none">
+                <button id="close-btn"
+                    class="absolute top-5 right-6 text-white text-3xl focus:outline-none z-[10000] pointer-events-auto">
+                    <i class="ri-close-line"></i>
+                </button>
+                <a href="../index.html" class="hover:underline text-3xl">Program Donasi</a>
+                <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
+                <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
+                <a href="./login.html">
+                    <button class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md ">
+                        Masuk / Daftar
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="berita-content max-w-[1100px] mx-auto px-6 py-12">
+        <!-- Judul utama -->
+        <header class="mb-8 text-left">
+            <h1 class="text-3xl md:text-4xl font-bold text-[#000] mb-3">
+                Dapur Umum untuk bencana alam di Bogor
+            </h1>
+            <div class="flex items-center gap-4 text-sm text-gray-500">
+                <p>Ditulis oleh <span class="font-semibold text-[#147D58]">Tim FoodCare</span></p>
+                <p>•</p>
+                <p>02 November 2025</p>
+            </div>
+        </header>
+
+        <!-- Gambar utama -->
+        <div class="mb-8">
+            <img src="../assets/image/Home-Blog-Image-2.svg" alt="Kegiatan Donasi Makanan FoodCare"
+                class="w-full h-auto shadow-md object-cover">
+        </div>
+
+        <!-- Isi artikel -->
+        <article class="text-gray-700 leading-relaxed space-y-5">
+            <p>
+                FoodCare berkomitmen menjadi solusi atas dua tantangan besar dunia: kelaparan dan limbah makanan.
+                Melalui platform ini, kami menjembatani donatur yang memiliki makanan berlebih dengan masyarakat yang
+                membutuhkan.
+                Setiap donasi bukan hanya sekadar berbagi makanan, tetapi juga langkah nyata menjaga keberlanjutan
+                lingkungan.
+            </p>
+
+            <p>
+                Dengan dukungan teknologi, proses distribusi makanan menjadi lebih cepat, efisien, dan tepat sasaran.
+                Setiap donasi dapat dipantau secara transparan, memastikan bahwa makanan yang diberikan benar-benar
+                sampai ke penerima manfaat.
+            </p>
+
+            <blockquote class="border-l-4 border-[#E3712D] pl-4 italic text-[#2C6752] font-medium">
+                "Kami percaya bahwa tidak ada makanan yang seharusnya terbuang, dan tidak ada manusia yang seharusnya
+                kelaparan."
+            </blockquote>
+
+            <p>
+                FoodCare terus mengajak masyarakat untuk menjadi bagian dari gerakan ini — baik sebagai donatur,
+                relawan, maupun mitra distribusi.
+                Bersama, kita bisa menciptakan perubahan positif yang berdampak luas bagi sesama dan bumi.
+            </p>
+        </article>
+
+        <!-- Bagian share -->
+        <div class="mt-10 flex items-center gap-3">
+            <span class="font-semibold text-gray-700">Bagikan:</span>
+            <div class="flex gap-4 text-2xl text-[#2C6752]">
+                <a href="#" title="Bagikan ke Facebook"><i
+                        class="ri-facebook-circle-fill hover:text-[#1877F2] transition"></i></a>
+                <a href="#" title="Bagikan ke Twitter"><i
+                        class="ri-twitter-x-fill hover:text-[#000] transition"></i></a>
+                <a href="#" title="Bagikan ke WhatsApp"><i
+                        class="ri-whatsapp-fill hover:text-[#25D366] transition"></i></a>
+                <a href="#" title="Bagikan ke Instagram"><i
+                        class="ri-instagram-fill hover:text-[#E1306C] transition"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta-section mt-[-30px] flex justify-center px-4 py-12">
+        <div class="cta relative max-w-[1100px] w-full rounded-xl overflow-hidden">
+            <img src="../assets/image/cta.svg" alt="CTA Image"
+                class="w-full h-[210px] sm:h-[230px] md:h-[240px] object-cover rounded-xl">
+            <div class="absolute inset-0 flex flex-col justify-center text-white px-4 sm:px-8">
+                <h2
+                    class="font-bold text-[20px] sm:text-[18px] md:text-[28px] leading-tight mb-3 text-left drop-shadow-md">
+                    Ayo Mulai Gerakan Berbagimu, <br>
+                    Dengan Makanan Bersama FoodCare!
+                </h2>
+
+                <a href="list-donasi-makanan.html"
+                    class="bg-[#147D58] hover:bg-[#0f5a3f] transition-colors rounded-md mt-2 px-5 py-2 w-fit">
+                    <button class="text-white font-semibold text-sm">Mulai Sekarang</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer bg-[#275B48] text-white px-6 md:px-0 " style="padding-top:3rem; padding-bottom: 0.5rem;">
+        <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="left space-y-4">
+                <img src="../assets/image/Website-Logo.svg" alt="Logo FoodCare" class="w-[180px]">
+                <p class="text-[#CDCDCD] text-[15px] leading-relaxed">
+                    Foodcare adalah platform donasi makanan yang menghubungkan donatur dengan penerima manfaat, agar
+                    setiap
+                    hidangan berlebih bisa menjadi berkah bagi sesama.
+                </p>
+            </div>
+            <div class="center grid grid-cols-2 gap-6">
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Navigasi</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="../index.html">Program Donasi</a></li>
+                        <li><a href="tentang.html">Tentang Foodcare</a>
+                        </li>
+                        <li><a href="contact-us.html">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold mb-3 text-lg">Sosial Media</h2>
+                    <ul class="space-y-2 text-[#CDCDCD] text-[15px]">
+                        <li><a href="https://www.instagram.com">Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/">Tiktok</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right space-y-4">
+                <h2 class="font-bold text-lg">Berlangganan Berita Kami</h2>
+
+                <div class="block space-y-3">
+                    <input type="email" placeholder="Email Address"
+                        class="px-4 py-2 rounded-md  outline-none border-none text-[#000] w-full">
+                    <button class="bg-[#E3712D] hover:bg-[#c85f20] text-white px-5 py-2 rounded-md transition w-full">
+                        Subscribe Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 0.1px solid #8d8a8a;" class="bottom mt-12 pt-6 text-center">
+            <p class="text-[#FFF] text-[14px] relative top-[-5px]">Copyright ©2025 - FoodCare Platform</p>
+        </div>
+    </section>
+
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>
