@@ -256,6 +256,68 @@
         </div>
     </section>
 
+    <div id="loading-overlay"
+        class="fixed inset-0 flex flex-col items-center justify-center z-[99999] transition-opacity duration-700 overflow-hidden animate-bg">
+        <img src="../assets/image/Header-Icon.svg" alt="Logo" class="w-28 h-28 mb-6 animate-bounce">
+        <h2 class="text-5xl font-extrabold text-white drop-shadow-lg tracking-wide">Foodcare</h2>
+        <p class="text-[#f0f0f0] text-2xl mt-2 font-medium italic">with food we care</p>
+        <div class="w-[260px] h-[8px] bg-white/40 rounded-full mt-8 overflow-hidden shadow-md">
+            <div id="progress-bar" class="h-full bg-[#E3712D] rounded-full w-0"></div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animate-bg {
+            background: linear-gradient(-45deg, #2C6752, #1F4E3D, #3A8265, #2C6752);
+            background-size: 400% 400%;
+            animation: gradientMove 6s ease infinite;
+        }
+    </style>
+
+    <script>
+        // Cek apakah user sudah pernah melihat loading di sesi ini
+        if (!sessionStorage.getItem("hasLoaded")) {
+            // Belum pernah lihat -> tampilkan loading
+            const progress = document.getElementById("progress-bar");
+            const overlay = document.getElementById("loading-overlay");
+
+            let width = 0;
+            const interval = setInterval(() => {
+                width += 2;
+                progress.style.width = width + "%";
+                if (width >= 100) {
+                    clearInterval(interval);
+                    overlay.style.opacity = "0";
+                    setTimeout(() => {
+                        overlay.style.display = "none";
+                        // Simpan status sudah loading
+                        sessionStorage.setItem("hasLoaded", "true");
+                    }, 700);
+                }
+            }, 40);
+        } else {
+            // Sudah pernah loading -> langsung sembunyikan overlay
+            document.getElementById("loading-overlay").style.display = "none";
+        }
+    </script>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/navbar.js"></script>
     <script src="../assets/js/slider-swiper.js"></script>
