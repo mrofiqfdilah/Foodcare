@@ -1,7 +1,5 @@
 ## Foodcare : With food we care ✨
-
 ![Tampilan Website](./assets/image/foodcare-project.svg)
-
 
 FoodCare adalah platform yang dirancang untuk menghubungkan pihak yang memiliki surplus makanan (seperti restoran, supermarket, dan produsen makanan) dengan masyarakat yang membutuhkan. Aplikasi ini bertujuan mengurangi kelaparan sekaligus menekan pemborosan makanan di Indonesia melalui sistem donasi berbasis teknologi.
 
