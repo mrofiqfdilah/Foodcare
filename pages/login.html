@@ -12,38 +12,49 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-[#E1F7F0] flex items-center justify-center min-h-screen px-4 py-10 md:py-16">
+<body class="bg-[#E1F7F0] flex items-center justify-center min-h-screen px-4 py-10 md:py-16 font-[Plus Jakarta Sans]">
     <div class="bg-white shadow-xl rounded-2xl w-full max-w-[420px] p-8 border-t-4 border-[#E3712D]">
         <div class="flex flex-col items-center mb-6">
             <img src="../assets/image/Header-Icon.svg" alt="Foodcare Logo" class="w-14 mb-2">
-            <h2 class="text-2xl font-bold text-[#2C6752]">
-                Welcome to Foodcare
-            </h2>
-            <p class="text-gray-500 text-center text-[15px] mt-1">
-                Masuk dan mulai berbagi kebaikan ✨
-            </p>
+            <h2 class="text-2xl font-bold text-[#2C6752]">Welcome to Foodcare</h2>
+            <p class="text-gray-500 text-center text-[15px] mt-1">Masuk dan mulai berbagi kebaikan ✨</p>
         </div>
 
         <form>
             <div class="mb-4">
                 <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                <input type="email" id="email" placeholder="Masukkan email"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-[#E3712D]" />
+                <input type="email" required id="email" placeholder="Masukkan email"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none " />
             </div>
 
             <div class="mb-6 relative">
                 <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
-                <input type="password" id="password" placeholder="Masukkan password"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none pr-10 focus:ring-2 focus:ring-[#E3712D]" />
+                <input type="password" required id="password" placeholder="Masukkan password"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none pr-10 " />
                 <i id="togglePassword"
                     class="ri-eye-off-line absolute right-3 top-[44px] text-gray-500 cursor-pointer text-xl hover:text-[#E3712D] transition"></i>
             </div>
 
             <a href="../index.html"
                 class="block text-center w-full bg-[#E3712D] text-white font-semibold py-3 rounded-lg hover:bg-[#c75e22] transition duration-300">
-                Masuk Sekarang
+                <button>
+                    Masuk Sekarang
+                </button>
             </a>
         </form>
+
+        <div class="flex items-center my-6">
+            <div class="flex-grow h-px bg-gray-300"></div>
+            <span class="mx-3 text-gray-500 text-sm">atau</span>
+            <div class="flex-grow h-px bg-gray-300"></div>
+        </div>
+
+        <button
+            class="flex items-center justify-center w-full border border-gray-300 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Icon"
+                class="w-5 h-5 mr-2">
+            <span class="text-gray-700 font-medium">Masuk dengan Google</span>
+        </button>
 
         <p class="text-center text-gray-600 text-sm mt-6">
             Belum punya akun?

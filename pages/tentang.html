@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foodcare Official Platform | Tentang Foodcare</title>
+    <title>Foodcare Official Platform | Tentang</title>
     <link rel="icon" href="../assets/image/Header-Icon.svg">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/home.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -30,7 +30,8 @@
                 <li><a href="./contact-us.html" class="text-white text-[16px] font-medium">Hubungi Kami</a></li>
                 <li>
                     <a href="./login.html">
-                        <button class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md ">
+                        <button
+                            class="bg-[#E3712D] text-[#fff] font-semibold px-4 py-2 rounded-md hover:bg-[#c75e22] transition duration-300">
                             Masuk / Daftar
                         </button>
                     </a>
@@ -49,7 +50,8 @@
                 <a href="./tentang.html" class="hover:underline text-3xl">Tentang</a>
                 <a href="./contact-us.html" class="hover:underline text-3xl">Hubungi Kami</a>
                 <a href="./login.html">
-                    <button class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md ">
+                    <button
+                        class="bg-[#E3712D] text-[#fff] text-2xl font-semibold px-6 py-2 rounded-md hover:bg-[#c75e22] transition duration-300 ">
                         Masuk / Daftar
                     </button>
                 </a>
@@ -57,7 +59,7 @@
         </div>
     </nav>
 
-    <section class="tentang text-center flex flex-col items-center px-4 py-12">
+    <section class="tentang text-center flex flex-col items-center px-4 py-12" data-aos="fade-up">
         <button class="bg-[#FDF1EA] text-[18px] text-[#E3712D] px-4 py-2 rounded-full font-semibold mb-4">
             Tentang Kami
         </button>
@@ -124,7 +126,7 @@
                 </div>
             </div>
             <div class="right space-y-4">
-                <h2 class="font-bold text-lg">Berlangganan Berita Kami</h2>
+                <h2 class="font-bold text-lg">Berlangganan Artikel Kami</h2>
 
                 <div class="block space-y-3">
                     <input type="email" placeholder="Email Address"
@@ -141,6 +143,14 @@
     </section>
 
     <script src="../assets/js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>

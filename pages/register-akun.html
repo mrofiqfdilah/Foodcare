@@ -13,6 +13,7 @@
 </head>
 
 <body class="bg-[#E1F7F0] flex items-center justify-center min-h-screen px-4 py-10 md:py-16">
+
     <div class="bg-white shadow-xl rounded-2xl w-full max-w-[420px] p-8 border-t-4 border-[#E3712D]">
         <div class="flex flex-col items-center mb-6">
             <img src="../assets/image/Header-Icon.svg" alt="Foodcare Logo" class="w-14 mb-2">
@@ -23,40 +24,36 @@
                 Sebelum berdonasi, register akun dulu yuk 😊
             </p>
         </div>
-
         <form>
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
-                <input type="text" id="name" placeholder="Masukkan nama lengkap"
+                <input type="text" required id="name" placeholder="Masukkan nama lengkap"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none " />
             </div>
-
             <div class="mb-4">
                 <label for="phone" class="block text-gray-700 font-medium mb-2">No HP</label>
-                <input type="tel" id="phone" placeholder="Masukkan nomor HP"
+                <input type="tel" required id="phone" placeholder="Masukkan nomor HP"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none " />
             </div>
-
             <div class="mb-4">
                 <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                <input type="email" id="email" placeholder="Masukkan email"
+                <input type="email" required id="email" placeholder="Masukkan email"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none" />
             </div>
-
             <div class="mb-6 relative">
                 <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
-                <input type="password" id="password" placeholder="Masukkan password"
+                <input type="password" required id="password" placeholder="Masukkan password"
                     class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 outline-none pr-10" />
-                <!-- Eye Icon -->
                 <i id="togglePassword"
                     class="ri-eye-off-line absolute right-3 top-[44px] text-gray-500 cursor-pointer text-xl "></i>
             </div>
             <a href="login.html"
                 class="block text-center w-full bg-[#E3712D] text-white font-semibold py-3 rounded-lg hover:bg-[#c75e22] transition duration-300">
-                Daftar Sekarang
+                <button>
+                    Daftar Sekarang
+                </button>
             </a>
         </form>
-
         <p class="text-center text-gray-600 text-sm mt-6">
             Sudah punya akun?
             <a href="login.html" class="text-[#2C6752] font-semibold hover:underline">Masuk Sekarang</a>
